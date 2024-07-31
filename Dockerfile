@@ -3,6 +3,7 @@ FROM node:lts-alpine
 WORKDIR /app
 # 复制项目文件到工作目录
 COPY hubcmdui/ .
+USER 10014
 # 安装项目依赖
 RUN npm install
 # 暴露应用程序的端口
